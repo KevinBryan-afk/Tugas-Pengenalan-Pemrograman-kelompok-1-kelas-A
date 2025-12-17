@@ -10,5 +10,4 @@ def main():
   a = float(input("angka pertama: "))
   b =  float(input("angka kedua: "))
 
-if __name__ == "__main__":
-  main()
+main()
