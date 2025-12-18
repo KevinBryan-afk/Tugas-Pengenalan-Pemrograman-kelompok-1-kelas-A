@@ -7,12 +7,12 @@ def tampilkan_menu():
   print("3. Perkalian")
   print("4. Pembagian")
 
-def input_angka()
+def input_angka():
   a = float(input("angka pertama: "))
   b =  float(input("angka kedua: "))
   return a, b
 
-def main()
+def main():
   tampilkan_menu()
   
   pilihan = input("Pilih Operasi yang ingin digunakan. (1/2/3/4) ")
