@@ -1,3 +1,4 @@
+from fitur_perkalian_dan_pembagian.py import kali,bagi
 def main():
   print("Kalkulator Sederhana")
   print("1. Penjumlahan")
