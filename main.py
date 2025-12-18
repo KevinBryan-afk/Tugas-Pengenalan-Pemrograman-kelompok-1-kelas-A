@@ -1,5 +1,5 @@
-from fitur_perkalian_dan_pembagian.py import kali,bagi
-from fitur_tambah_kurang.py import tambah,kurang
+from fitur_perkalian_dan_pembagian import kali,bagi
+from fitur_tambah_kurang import tambah,kurang
 def tampilkan_menu():
   print("Kalkulator Sederhana")
   print("1. Penjumlahan")
