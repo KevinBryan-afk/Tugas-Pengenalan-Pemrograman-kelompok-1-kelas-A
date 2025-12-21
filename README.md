@@ -25,6 +25,7 @@ Panduan Menjalankan:
 
 Dokumentasi Teknis:
 
+```mermaid
 flowchart TD
     A([Mulai]) --> B[Tampilkan Menu Operasi]
     B --> C{Pilihan Pengguna?}
@@ -40,3 +41,14 @@ flowchart TD
     G --> I[/Tampilkan Hasil/]
     H --> I
     I --> B
+
+```
+
+    Daftar Kontribusi:
+
+    
+| Nama Kontributor        |Nim     | Persentase Kontribusi | Jumlah Kontribusi | Profil GitHub                              |
+|------------------------|-----------|----------------------|-------------------|--------------------------------------------|
+| Kiran               | 250211060009    |33,33%                  | 10                |  [kiran](https://github.com/kiranamade002-svg.png) ![kiran](https://github.com/kiranamade002-svg.png) |
+| Kevin                 |250211060006  | 33,33%                  | 10                 | [kevin](https://github.com/KevinBryan-afk.png) ![kevin](https://github.com/KevinBryan-afk.png) |
+| Lionel         | 250211060008      | 33,33%                   | 10                 | [lionel](https://github.com/coldfingerlion.png) ![lionel](https://github.com/coldfingerlion.png) |
