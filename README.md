@@ -25,22 +25,18 @@ Panduan Menjalankan:
 
 Dokumentasi Teknis:
 
-'''graph TD
+flowchart TD
     A([Mulai]) --> B[Tampilkan Menu Operasi]
-    B --> C{Pilih Operasi 0-4}
+    B --> C{Pilihan Pengguna?}
     
-    C -- "0" --> L([Keluar])
-    C -- "1, 2, 3, 4" --> D[/Input Angka Pertama & Kedua/]
+    C -- "0" --> D([Selesai])
+    C -- "1, 2, 3, 4" --> E[/Input Dua Angka/]
     
-    D --> E{Pilihan Operasi?}
+    E --> F{Jenis Operasi?}
     
-    E -- "1 (Tambah)" --> F[Panggil fitur_tambah_kurang.py]
-    E -- "2 (Kurang)" --> G[Panggil fitur_tambah_kurang.py]
-    E -- "3 (Kali)" --> H[Panggil fitur_perkalian_dan_pembagian.py]
-    E -- "4 (Bagi)" --> I[Panggil fitur_perkalian_dan_pembagian.py]
+    F -- "1 atau 2" --> G[Proses di Modul fitur_tambah_kurang]
+    F -- "3 atau 4" --> H[Proses di Modul fitur_perkalian_dan_pembagian]
     
-    F & G & H & I --> J[Proses Perhitungan]
-    J --> K[/Tampilkan Hasil/]
-    K --> B
-
-'''
+    G --> I[/Tampilkan Hasil/]
+    H --> I
+    I --> B
