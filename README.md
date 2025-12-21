@@ -21,3 +21,26 @@ Panduan Menjalankan:
 4. Kalkulator Muncul
 5. Masukkan Angka dan Pilih Operasi dan Hasil Perhitungan akan Muncul
 6. Tutup Program Setelah Selesai
+
+
+Dokumentasi Teknis:
+
+'''graph TD
+    A([Mulai]) --> B[Tampilkan Menu Operasi]
+    B --> C{Pilih Operasi 0-4}
+    
+    C -- "0" --> L([Keluar])
+    C -- "1, 2, 3, 4" --> D[/Input Angka Pertama & Kedua/]
+    
+    D --> E{Pilihan Operasi?}
+    
+    E -- "1 (Tambah)" --> F[Panggil fitur_tambah_kurang.py]
+    E -- "2 (Kurang)" --> G[Panggil fitur_tambah_kurang.py]
+    E -- "3 (Kali)" --> H[Panggil fitur_perkalian_dan_pembagian.py]
+    E -- "4 (Bagi)" --> I[Panggil fitur_perkalian_dan_pembagian.py]
+    
+    F & G & H & I --> J[Proses Perhitungan]
+    J --> K[/Tampilkan Hasil/]
+    K --> B
+
+'''
